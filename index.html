@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Destiny App</title>
+    <link rel="stylesheet" href="myStyle.css">
+</head>
+<body>
+
+<div id="destiny-app">
+    <div class="card blue">
+        <!--v-for="item in cards-->
+       <!--img goes here-->
+        <img src="https://swdestinydb.com/bundles/cards/en/01/01038.jpg">
+
+        <div class="health" v-for="(item) in cards">11</div>
+        <div class="rarity legendary">100 </div>
+        <div class="name" v-for="(item, index) in cards"><h3>Rey</h3></div>
+        <div class="affl villain">hero</div>
+    </div>
+
+    <div class="card yellow">
+        <!--v-for="item in cards-->
+        <!--img goes here-->
+        <img src="http://images-cdn.fantasyflightgames.com/filer_public/3b/15/3b1513ab-1bf2-46f9-93ec-9fb0246e567b/sws17_main.png">
+
+        <div class="health" v-for="(item) in cards">10</div>
+        <div class="rarity rare">36</div>
+        <div class="name" v-for="(item, index) in cards">Han Solo</div>
+        <div class="affl villain">hero</div>
+    </div>
+
+    <div class="card red">
+        <!--v-for="item in cards-->
+        <!--img goes here-->
+        <img src="https://i.pinimg.com/originals/67/fe/ca/67feca5ed7040713e386d568860701a8.jpg">
+
+        <div class="health" v-for="(item) in cards">13</div>
+        <div class="rarity rare">50</div>
+        <div class="name" v-for="(item, index) in cards">General Grievous</div>
+        <div class="affl villain">villain</div>
+    </div>
+
+    <div class="card blue">
+        <!--v-for="item in cards-->
+        <!--img goes here-->
+        <img src="http://images-cdn.fantasyflightgames.com/filer_public/70/2d/702dba51-4b9f-46db-ad74-36216b9fdbe9/swd13_preview2.jpg">
+
+        <div class="health" v-for="(item) in cards">11</div>
+        <div class="rarity legendary">5</div>
+        <div class="name" v-for="(item, index) in cards">Darth Vader</div>
+        <div class="affl villain">villain</div>
+    </div>
+
+
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
